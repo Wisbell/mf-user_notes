@@ -5,3 +5,16 @@ console.log("app.js loaded")
 
 
 // configure angular
+var app = angular.module('userNotesApp', ['ngRoute'])
+
+app.config(function($routeProvider, $locationProvider){
+  $locationProvider.hashPrefix('')
+
+  $routeProvider
+    .when()
+})
+
+
+app.controller('MainCtrl', function($scope){
+
+})
