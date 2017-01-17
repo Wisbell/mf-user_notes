@@ -1,1 +1,10 @@
 <h1>Note list View</h1>
+
+<ul>
+  <li ng-repeat="(key, value) in noteList">
+
+  <h3>Name: {{value.name}}</h3>
+  <p>The Note: {{value.text}}</p>
+
+  </li>
+</ul>

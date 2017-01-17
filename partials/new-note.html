@@ -3,11 +3,11 @@
 <form>
  <div class="form-group">
     <label for="usr">Note Name</label>
-    <input type="text" class="form-control" id="usr">
+    <input ng-model="noteName" type="text" class="form-control" id="usr">
   </div>
   <div class="form-group">
-    <label for="pwd">Note Text</label>
-    <textarea></textarea>
+    <label for="text">Note Text</label>
+    <textarea ng-model="noteText"></textarea>
   </div>
-  <button class="btn btn-default" type="submit">Create Note</button>
+  <button ng-click="createNote()" class="btn btn-default" type="submit">Create Note</button>
 </form>

@@ -33,17 +33,36 @@ app.config(function($routeProvider, $locationProvider){
 
 // })
 
-app.controller('NoteCtrl', function($scope){
+app.controller('NoteCtrl', function($scope, $http){
   console.log("Note controller")
 
-  $scope.createNoteButton = $('').on('click', function(){
+  $scope.createNote = function(){
+    console.log("Create Note Button Clicked")
 
-  })
+    console.log("note name", $scope.noteName)
+    console.log("note text", $scope.noteText)
+
+    let note = {
+                "name": $scope.noteName,
+                "text": $scope.noteText
+              }
+
+    $http.post(`https://west-user-notes.firebaseio.com/notes.json`, JSON.stringify(note))
+  }
 })
 
 app.controller('NoteListCtrl', function($scope, $http){
   console.log("Note List controller")
 
-  //$http
+  $http.get(`https://west-user-notes.firebaseio.com/notes.json`)
+    .then(function(val){
+      //console.log(val)
+      $scope.noteList = val.data;
+      console.log($scope.noteList)
+
+      for(key in val.data){
+        console.log(val.data[key])
+      }
+    })
 
 })
