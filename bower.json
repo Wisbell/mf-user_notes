@@ -1,0 +1,23 @@
+{
+  "name": "mf-user_notes",
+  "homepage": "https://github.com/Wisbell/mf-user_notes",
+  "authors": [
+    "Wisbell <westleyisbell@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}
