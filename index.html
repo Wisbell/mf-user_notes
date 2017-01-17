@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>User Notes App</title>
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body ng-app="userNoteApp">
+<body ng-app="noteApp">
 
   <!-- Make a Nav -->
   <nav class="navbar navbar-default">
     <ul class="nav navbar-nav">
-      <li><a href="https://localhost:8080/#/">Home</a></li>
-      <li><a href="https://localhost:8080/#/new-note">New Note</a></li>
-      <li><a href="https://localhost:8080/#/list-notes">List Notes</a></li>
+      <li><a href="http://localhost:8080/#/">Home</a></li>
+      <li><a href="http://localhost:8080/#/new-note">New Note</a></li>
+      <li><a href="http://localhost:8080/#/list-notes">List Notes</a></li>
     </ul>
   </nav>
+
   <!-- Views show up here -->
   <div ng-view></div>
 
-  <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+  <script src="/bower_components/angular/angular.js" type="text/javascript"></script>
 
-  <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+  <script src="/bower_components/angular-route/angular-route.js" type="text/javascript"></script>
 
-  <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+  <script src="/bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
 
   <script src="app.js" type="text/javascript"></script>
 </body>
